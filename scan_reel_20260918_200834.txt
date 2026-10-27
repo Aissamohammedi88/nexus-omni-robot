@@ -1,0 +1,2025 @@
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "============================================================"]133;k;end_suffix_kitty============================================================
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo " SCAN RÉEL DU DOSSIER"]133;k;end_suffix_kitty SCAN RÉEL DU DOSSIER
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "============================================================"]133;k;end_suffix_kitty============================================================
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Dossier : $BASE"]133;k;end_suffix_kittyDossier : /home/nexus/robots_google_nvidia
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Date    : $(date '+%Y-%m-%d %H:%M:%S')"]133;k;end_suffix_kittyDate    : 2026-09-18 20:08:34
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Machine : $(hostname)"]133;k;end_suffix_kittyMachine : nexus-Latitude-5520
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "============================================================"]133;k;end_suffix_kitty============================================================
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo]133;k;end_suffix_kitty
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "===== STRUCTURE DES DOSSIERS ====="]133;k;end_suffix_kitty===== STRUCTURE DES DOSSIERS =====
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;if command -v tree >/dev/null 2>&1; then     tree -a -L 4 "$BASE"; else     find "$BASE" -maxdepth 4 -print | sort; fi]133;k;end_suffix_kitty/home/nexus/robots_google_nvidia
+├── activate.sh
+├── conversation_ollama.py
+├── forge_robot.sh
+├── googlebot.txt
+├── google_robots.txt
+├── google_sitemap.txt
+├── importlib
+├── install_50_outils.sh
+├── json
+├── lancer_cerveau.sh
+├── lancer_conversation.sh
+├── logs
+├── models
+│   └── vosk-model-fr
+│       ├── am
+│       │   └── final.mdl
+│       ├── conf
+│       │   ├── mfcc.conf
+│       │   └── model.conf
+│       ├── graph
+│       │   ├── disambig_tid.int
+│       │   ├── Gr.fst
+│       │   ├── HCLr.fst
+│       │   └── phones
+│       ├── ivector
+│       │   ├── final.dubm
+│       │   ├── final.ie
+│       │   ├── final.mat
+│       │   ├── global_cmvn.stats
+│       │   ├── online_cmvn.conf
+│       │   └── splice.conf
+│       └── README
+├── nvidia_crawlers.txt
+├── nvidia_robots.txt
+├── nvidia_sitemap.txt
+├── optimus_config.json
+├── optimus_install.log
+├── optimus_report
+│   └── optimus_gap_20260918_134445.txt
+├── os
+├── robot_core
+│   ├── config.json
+│   ├── gpio
+│   │   ├── gpio.sh
+│   │   └── pins
+│   │       ├── gpio0
+│   │       ├── gpio1
+│   │       ├── gpio10
+│   │       ├── gpio11
+│   │       ├── gpio12
+│   │       ├── gpio13
+│   │       ├── gpio14
+│   │       ├── gpio15
+│   │       ├── gpio16
+│   │       ├── gpio17
+│   │       ├── gpio18
+│   │       ├── gpio19
+│   │       ├── gpio2
+│   │       ├── gpio20
+│   │       ├── gpio21
+│   │       ├── gpio22
+│   │       ├── gpio23
+│   │       ├── gpio24
+│   │       ├── gpio25
+│   │       ├── gpio26
+│   │       ├── gpio27
+│   │       ├── gpio3
+│   │       ├── gpio4
+│   │       ├── gpio5
+│   │       ├── gpio6
+│   │       ├── gpio7
+│   │       ├── gpio8
+│   │       └── gpio9
+│   ├── i2c
+│   │   ├── bus0
+│   │   ├── bus1
+│   │   └── i2c.sh
+│   ├── pwm
+│   │   ├── ch0
+│   │   ├── ch1
+│   │   ├── ch2
+│   │   ├── ch3
+│   │   ├── ch4
+│   │   ├── ch5
+│   │   ├── ch6
+│   │   ├── ch7
+│   │   └── pwm.sh
+│   ├── robot.sh
+│   └── spi
+│       ├── dev
+│       └── spi.sh
+├── robot_ollama.py
+├── scan_gemini_robot.json
+├── scan_reports
+│   ├── scan_reel_20260918_200211.txt
+│   └── scan_reel_20260918_200834.txt
+├── scan_senior_20260918_142449.txt
+├── scripts
+│   ├── moteur_logique.py
+│   ├── parle_au_robot.py
+│   ├── robot_local.py
+│   ├── test_materiel.py
+│   ├── test_robot_reel.py
+│   ├── test_sante_robot.py
+│   ├── test_simulation_complet.py
+│   ├── test_simulation.py
+│   └── test_voice.py
+├── subprocess
+├── sys
+├── test_message.py
+├── test_robot.py
+├── tests
+├── venv
+│   ├── bin
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── Activate.ps1
+│   │   ├── async-json-rpc-server
+│   │   ├── bottle
+│   │   ├── bottle.py
+│   │   ├── cffi-gen-src
+│   │   ├── ct2-fairseq-converter
+│   │   ├── ct2-marian-converter
+│   │   ├── ct2-openai-gpt2-converter
+│   │   ├── ct2-opennmt-py-converter
+│   │   ├── ct2-opennmt-tf-converter
+│   │   ├── ct2-opus-mt-converter
+│   │   ├── ct2-transformers-converter
+│   │   ├── dotenv
+│   │   ├── f2py
+│   │   ├── fastapi
+│   │   ├── flask
+│   │   ├── fonttools
+│   │   ├── ftconf.py
+│   │   ├── ftdi_urls.py
+│   │   ├── gtts-cli
+│   │   ├── hf
+│   │   ├── httpx
+│   │   ├── huggingface-cli
+│   │   ├── i2cscan.py
+│   │   ├── idna
+│   │   ├── imageio_download_bin
+│   │   ├── imageio_remove_bin
+│   │   ├── isympy
+│   │   ├── lsm2bin
+│   │   ├── markdown-it
+│   │   ├── nltk
+│   │   ├── normalizer
+│   │   ├── numba
+│   │   ├── numpy-config
+│   │   ├── onnxruntime_test
+│   │   ├── pinout
+│   │   ├── pintest
+│   │   ├── pio
+│   │   ├── piodebuggdb
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.12
+│   │   ├── piper
+│   │   ├── platformio
+│   │   ├── plotly_get_chrome
+│   │   ├── pyav
+│   │   ├── __pycache__
+│   │   │   ├── bottle.cpython-312.pyc
+│   │   │   ├── ftconf.cpython-312.pyc
+│   │   │   ├── ftdi_urls.cpython-312.pyc
+│   │   │   ├── i2cscan.cpython-312.pyc
+│   │   │   ├── pyterm.cpython-312.pyc
+│   │   │   ├── readelf.cpython-312.pyc
+│   │   │   └── read_zbar.cpython-312.pyc
+│   │   ├── pyftmerge
+│   │   ├── pyftsubset
+│   │   ├── pygmentize
+│   │   ├── pyserial-miniterm
+│   │   ├── pyserial-ports
+│   │   ├── pyterm.py
+│   │   ├── pytesseract
+│   │   ├── python -> python3
+│   │   ├── python3 -> /usr/bin/python3
+│   │   ├── python3.12 -> python3
+│   │   ├── readelf.py
+│   │   ├── read_zbar
+│   │   ├── read_zbar.py
+│   │   ├── spacy
+│   │   ├── sprc
+│   │   ├── srt
+│   │   ├── srt-deduplicate
+│   │   ├── srt-fixed-timeshift
+│   │   ├── srt-linear-timeshift
+│   │   ├── srt-lines-matching
+│   │   ├── srt-mux
+│   │   ├── srt-normalise
+│   │   ├── srt-play
+│   │   ├── srt-process
+│   │   ├── tabulate
+│   │   ├── tiff2fsspec
+│   │   ├── tiffcomment
+│   │   ├── tifffile
+│   │   ├── tiny-agents
+│   │   ├── tqdm
+│   │   ├── transformers
+│   │   ├── ttx
+│   │   ├── typer
+│   │   ├── uvicorn
+│   │   ├── vosk-transcriber
+│   │   ├── watchmedo
+│   │   ├── weasel
+│   │   ├── websockets
+│   │   └── wheel
+│   ├── COPYING
+│   ├── include
+│   │   └── python3.12
+│   ├── lib
+│   │   └── python3.12
+│   │       └── site-packages
+│   ├── lib64 -> lib
+│   ├── pyvenv.cfg
+│   └── share
+│       ├── jupyter
+│       │   └── labextensions
+│       └── man
+│           └── man1
+└── voices
+    ├── fr_FR-siwis-medium.onnx
+    ├── fr_FR-siwis-medium.onnx.1
+    ├── fr_FR-siwis-medium.onnx.json
+    └── fr_FR-siwis-medium.onnx.json.1
+
+73 directories, 156 files
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo]133;k;end_suffix_kitty
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "===== STATISTIQUES ====="]133;k;end_suffix_kitty===== STATISTIQUES =====
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;TOTAL_FILES=$(find "$BASE" -type f 2>/dev/null | wc -l)]133;k;end_suffix_kitty]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;TOTAL_DIRS=$(find "$BASE" -type d 2>/dev/null | wc -l)]133;k;end_suffix_kitty]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;TOTAL_LINKS=$(find "$BASE" -type l 2>/dev/null | wc -l)]133;k;end_suffix_kitty]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;TOTAL_SIZE=$(du -sh "$BASE" 2>/dev/null | awk '{print $1}')]133;k;end_suffix_kitty]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Fichiers       : $TOTAL_FILES"]133;k;end_suffix_kittyFichiers       : 47860
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Dossiers       : $TOTAL_DIRS"]133;k;end_suffix_kittyDossiers       : 7465
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Liens symboliques : $TOTAL_LINKS"]133;k;end_suffix_kittyLiens symboliques : 4
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "Taille totale  : ${TOTAL_SIZE:-inconnue}"]133;k;end_suffix_kittyTaille totale  : 3,1G
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo]133;k;end_suffix_kitty
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "===== TYPES DE FICHIERS ====="]133;k;end_suffix_kitty===== TYPES DE FICHIERS =====
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;find "$BASE" -type f 2>/dev/null     | awk -F. 'NF > 1 {print tolower($NF)}'     | sort | uniq -c | sort -rn]133;k;end_suffix_kitty  19285 py
+  19271 pyc
+   1117 obj
+   1095 urdf
+   1077 mtl
+    665 pyi
+    572 txt
+    540 so
+    270 csv
+    194 pxd
+    178 dist-info/wheel
+    178 dist-info/record
+    178 dist-info/metadata
+    178 dist-info/installer
+    131 pyx
+    126 mat
+    113 gz
+    104 typed
+     89 dist-info/licenses/license
+     86 stl
+     83 png
+     75 0
+     70 h
+     67 ppn
+     64 f90
+     63 dist-info/requested
+     61 afm
+     59 doctest
+     53 json
+     48 sav
+     47 md
+     46 dat
+     45 rst
+     42 r
+     42 npy
+     40 ttf
+     40 tpl
+     39 c
+     38 build
+     31 mplstyle
+     29 xml
+     28 dist-info/license
+     25 npz
+     25 gin
+     25 f
+     24 tp
+     22 wav
+     21 in
+     19 svg
+     16 arff
+     16 al
+     15 sdf
+     15 js
+     15 exe
+     14 jpg
+     14 do
+     14 101
+     13 m
+     13 html
+     13 1
+     12 pkl
+     12 dist-info/zip-safe
+     12 dae
+     11 sh
+     11 pdf
+     11 ini
+     11 19
+     10 css
+     10 cpp
+     10 bz2
+      9 s
+      8 pyf
+      8 cu
+      8 2
+      7 onnx
+      7 index
+      7 data-00000-of-00001
+      7 102
+      6 xz
+      6 xls
+      6 dta
+      6 cfg
+      5 lzma
+      5 license
+      5 gzip
+      4 dist-info/licenses/copying
+      4 conf
+      4 bsd
+      4 apache
+      4 1k
+      3 z
+      3 yaml
+      3 xsl
+      3 toml
+      3 nc
+      3 fbs
+      3 dll
+      3 dist-info/licenses/notice
+      3 dist-info/licenses/authors
+      2 zip
+      2 tmpl
+      2 tif
+      2 pxi
+      2 pem
+      2 meta
+      2 lark
+      2 int
+      2 inp
+      2 hh
+      2 gif
+      2 g4
+      2 fst
+      2 f2py_f2cmap
+      2 dylib
+      2 dist-info/authors
+      2 b99
+      2 a99
+      2 a
+      2 5
+      2 11
+      1 yml
+      1 xrc
+      1 thirdparty
+      1 third-party
+      1 template
+      1 stats
+      1 rules
+      1 readme
+      1 pv
+      1 ptx
+      1 pth
+      1 ps1
+      1 properties
+      1 pc
+      1 params
+      1 names
+      1 msgpack
+      1 mdl
+      1 markdown-it
+      1 lua
+      1 log
+      1 lock
+      1 lgpl
+      1 jinja
+      1 ipynb
+      1 inc
+      1 ie
+      1 hpp
+      1 gdb
+      1 fits
+      1 fish
+      1 f95
+      1 external
+      1 dubm
+      1 dist-info/licenses/src/pip/_vendor/truststore/license
+      1 dist-info/licenses/src/pip/_vendor/tomli_w/license
+      1 dist-info/licenses/src/pip/_vendor/tomli/license
+      1 dist-info/licenses/src/pip/_vendor/rich/license
+      1 dist-info/licenses/src/pip/_vendor/resolvelib/license
+      1 dist-info/licenses/src/pip/_vendor/requests/license
+      1 dist-info/licenses/src/pip/_vendor/pyproject_hooks/license
+      1 dist-info/licenses/src/pip/_vendor/pygments/license
+      1 dist-info/licenses/src/pip/_vendor/platformdirs/license
+      1 dist-info/licenses/src/pip/_vendor/pkg_resources/license
+      1 dist-info/licenses/src/pip/_vendor/packaging/license
+      1 dist-info/licenses/src/pip/_vendor/msgpack/copying
+      1 dist-info/licenses/src/pip/_vendor/distro/license
+      1 dist-info/licenses/src/pip/_vendor/certifi/license
+      1 dist-info/licenses/numpy/ma/license
+      1 dist-info/licenses/numpy/_core/src/umath/svml/license
+      1 dist-info/licenses/numpy/_core/src/highway/license
+      1 dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/copying
+      1 dist-info/licenses/licence
+      1 dist-info/copying
+      1 dict
+      1 csh
+      1 cc
+      1 bin
+      1 asc
+      1 ani
+      1 7
+      1 6
+      1 4
+      1 3
+      1 216
+      1 17
+      1 165
+      1 16
+      1 12/site-packages/statsmodels/tsa/stl/tests/results/stl_co2
+      1 12/site-packages/statsmodels/tsa/statespace/tests/results/frbny_nowcast/nowcasting/license
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/variances
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/transition_matrices
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/sendump
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/readme
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/noisedict
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/means
+      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/mdef
+      1 12/site-packages/speech_recognition/flac-mac
+      1 12/site-packages/speech_recognition/flac-linux-x86_64
+      1 12/site-packages/speech_recognition/flac-linux-x86
+      1 12/site-packages/_soundfile_data/copying
+      1 12/site-packages/sklearn/svm/src/libsvm/libsvm_changes
+      1 12/site-packages/sklearn/svm/src/liblinear/copyright
+      1 12/site-packages/sklearn/externals/readme
+      1 12/site-packages/sklearn/externals/array_api_extra/license
+      1 12/site-packages/sklearn/externals/array_api_compat/license
+      1 12/site-packages/setuptools/config/_validate_pyproject/notice
+      1 12/site-packages/setuptools/config/notice
+      1 12/site-packages/scipy/_lib/_uarray/license
+      1 12/site-packages/scipy/integrate/license_dop
+      1 12/site-packages/pyftdi/install
+      1 12/site-packages/pvporcupine/license
+      1 12/site-packages/pip/_vendor/truststore/license
+      1 12/site-packages/pip/_vendor/tomli_w/license
+      1 12/site-packages/pip/_vendor/tomli/license
+      1 12/site-packages/pip/_vendor/rich/license
+      1 12/site-packages/pip/_vendor/resolvelib/license
+      1 12/site-packages/pip/_vendor/requests/license
+      1 12/site-packages/pip/_vendor/pyproject_hooks/license
+      1 12/site-packages/pip/_vendor/pygments/license
+      1 12/site-packages/pip/_vendor/platformdirs/license
+      1 12/site-packages/pip/_vendor/pkg_resources/license
+      1 12/site-packages/pip/_vendor/packaging/license
+      1 12/site-packages/pip/_vendor/msgpack/copying
+      1 12/site-packages/pip/_vendor/distro/license
+      1 12/site-packages/pip/_vendor/certifi/license
+      1 12/site-packages/piper/hebrew/source
+      1 12/site-packages/piper/hebrew/license
+      1 12/site-packages/piper/espeak-ng-data/yue_dict
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/zac
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/whisperf
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/whisper
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/victor
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/unirobot
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/tweaky
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/travis
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/storm
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/steph3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/steph2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/steph
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/shelby
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/sandro
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft8
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft7
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft6
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft5
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft4
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robosoft
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/robert
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/rob
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/ricishaymax3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/ricishaymax2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/ricishaymax
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/reed
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/quincy
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/pedro
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/paul
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/pablo
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/norbert
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/nguyen
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/mr serious
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/mike2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/mike
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/miguel
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/michel
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/michael
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/max
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/mario
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/marco
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/marcelo
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m8
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m7
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m6
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m5
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m4
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/m1
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/linda
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/lee
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/klatt6
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/klatt5
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/klatt4
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/klatt3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/klatt2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/klatt
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/kaukovalta
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/john
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/jacky
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/iven4
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/iven3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/iven2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/iven
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/ian
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/hugo
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/henrique
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/gustave
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/grandpa
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/grandma
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/gene2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/gene
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/fast
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/f5
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/f4
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/f3
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/f2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/f1
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/edward2
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/edward
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/ed
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/diogo
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/denis
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/demonic
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/david
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/croak
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/caleb
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/boris
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/benjamin
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/belinda
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/aunty
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/anxiousandy
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/antonio
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/announcer
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/annie
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/anikarobot
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/anika
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/andy
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/andrea
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/alicia
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/alex
+      1 12/site-packages/piper/espeak-ng-data/voices/!v/adam
+      1 12/site-packages/piper/espeak-ng-data/vi_dict
+      1 12/site-packages/piper/espeak-ng-data/uz_dict
+      1 12/site-packages/piper/espeak-ng-data/ur_dict
+      1 12/site-packages/piper/espeak-ng-data/uk_dict
+      1 12/site-packages/piper/espeak-ng-data/ug_dict
+      1 12/site-packages/piper/espeak-ng-data/tt_dict
+      1 12/site-packages/piper/espeak-ng-data/tr_dict
+      1 12/site-packages/piper/espeak-ng-data/tn_dict
+      1 12/site-packages/piper/espeak-ng-data/tk_dict
+      1 12/site-packages/piper/espeak-ng-data/ti_dict
+      1 12/site-packages/piper/espeak-ng-data/th_dict
+      1 12/site-packages/piper/espeak-ng-data/te_dict
+      1 12/site-packages/piper/espeak-ng-data/ta_dict
+      1 12/site-packages/piper/espeak-ng-data/sw_dict
+      1 12/site-packages/piper/espeak-ng-data/sv_dict
+      1 12/site-packages/piper/espeak-ng-data/sr_dict
+      1 12/site-packages/piper/espeak-ng-data/sq_dict
+      1 12/site-packages/piper/espeak-ng-data/smj_dict
+      1 12/site-packages/piper/espeak-ng-data/sl_dict
+      1 12/site-packages/piper/espeak-ng-data/sk_dict
+      1 12/site-packages/piper/espeak-ng-data/sjn_dict
+      1 12/site-packages/piper/espeak-ng-data/si_dict
+      1 12/site-packages/piper/espeak-ng-data/shn_dict
+      1 12/site-packages/piper/espeak-ng-data/sd_dict
+      1 12/site-packages/piper/espeak-ng-data/rup_dict
+      1 12/site-packages/piper/espeak-ng-data/ru_dict
+      1 12/site-packages/piper/espeak-ng-data/ro_dict
+      1 12/site-packages/piper/espeak-ng-data/qya_dict
+      1 12/site-packages/piper/espeak-ng-data/qu_dict
+      1 12/site-packages/piper/espeak-ng-data/quc_dict
+      1 12/site-packages/piper/espeak-ng-data/qdb_dict
+      1 12/site-packages/piper/espeak-ng-data/py_dict
+      1 12/site-packages/piper/espeak-ng-data/pt_dict
+      1 12/site-packages/piper/espeak-ng-data/pl_dict
+      1 12/site-packages/piper/espeak-ng-data/piqd_dict
+      1 12/site-packages/piper/espeak-ng-data/phontab
+      1 12/site-packages/piper/espeak-ng-data/phonindex
+      1 12/site-packages/piper/espeak-ng-data/phondata-manifest
+      1 12/site-packages/piper/espeak-ng-data/phondata
+      1 12/site-packages/piper/espeak-ng-data/pap_dict
+      1 12/site-packages/piper/espeak-ng-data/pa_dict
+      1 12/site-packages/piper/espeak-ng-data/or_dict
+      1 12/site-packages/piper/espeak-ng-data/om_dict
+      1 12/site-packages/piper/espeak-ng-data/nog_dict
+      1 12/site-packages/piper/espeak-ng-data/no_dict
+      1 12/site-packages/piper/espeak-ng-data/nl_dict
+      1 12/site-packages/piper/espeak-ng-data/ne_dict
+      1 12/site-packages/piper/espeak-ng-data/nci_dict
+      1 12/site-packages/piper/espeak-ng-data/my_dict
+      1 12/site-packages/piper/espeak-ng-data/mto_dict
+      1 12/site-packages/piper/espeak-ng-data/mt_dict
+      1 12/site-packages/piper/espeak-ng-data/ms_dict
+      1 12/site-packages/piper/espeak-ng-data/mr_dict
+      1 12/site-packages/piper/espeak-ng-data/mn_dict
+      1 12/site-packages/piper/espeak-ng-data/ml_dict
+      1 12/site-packages/piper/espeak-ng-data/mk_dict
+      1 12/site-packages/piper/espeak-ng-data/mi_dict
+      1 12/site-packages/piper/espeak-ng-data/lv_dict
+      1 12/site-packages/piper/espeak-ng-data/lt_dict
+      1 12/site-packages/piper/espeak-ng-data/lfn_dict
+      1 12/site-packages/piper/espeak-ng-data/lb_dict
+      1 12/site-packages/piper/espeak-ng-data/lang/zlw/sk
+      1 12/site-packages/piper/espeak-ng-data/lang/zlw/pl
+      1 12/site-packages/piper/espeak-ng-data/lang/zlw/cs
+      1 12/site-packages/piper/espeak-ng-data/lang/zls/sr
+      1 12/site-packages/piper/espeak-ng-data/lang/zls/sl
+      1 12/site-packages/piper/espeak-ng-data/lang/zls/mk
+      1 12/site-packages/piper/espeak-ng-data/lang/zls/hr
+      1 12/site-packages/piper/espeak-ng-data/lang/zls/bs
+      1 12/site-packages/piper/espeak-ng-data/lang/zls/bg
+      1 12/site-packages/piper/espeak-ng-data/lang/zle/uk
+      1 12/site-packages/piper/espeak-ng-data/lang/zle/ru-lv
+      1 12/site-packages/piper/espeak-ng-data/lang/zle/ru-cl
+      1 12/site-packages/piper/espeak-ng-data/lang/zle/ru
+      1 12/site-packages/piper/espeak-ng-data/lang/zle/be
+      1 12/site-packages/piper/espeak-ng-data/lang/xgn/mn
+      1 12/site-packages/piper/espeak-ng-data/lang/urj/smj
+      1 12/site-packages/piper/espeak-ng-data/lang/urj/hu
+      1 12/site-packages/piper/espeak-ng-data/lang/urj/fi
+      1 12/site-packages/piper/espeak-ng-data/lang/urj/et
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/uz
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/ug
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/tt
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/tr
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/tk
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/nog
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/ky
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/kk
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/kaa
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/cv
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/crh
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/ba
+      1 12/site-packages/piper/espeak-ng-data/lang/trk/az
+      1 12/site-packages/piper/espeak-ng-data/lang/tai/th
+      1 12/site-packages/piper/espeak-ng-data/lang/tai/shn
+      1 12/site-packages/piper/espeak-ng-data/lang/sit/yue-latn-jyutping
+      1 12/site-packages/piper/espeak-ng-data/lang/sit/yue
+      1 12/site-packages/piper/espeak-ng-data/lang/sit/my
+      1 12/site-packages/piper/espeak-ng-data/lang/sit/hak
+      1 12/site-packages/piper/espeak-ng-data/lang/sit/cmn-latn-pinyin
+      1 12/site-packages/piper/espeak-ng-data/lang/sit/cmn
+      1 12/site-packages/piper/espeak-ng-data/lang/sem/ti
+      1 12/site-packages/piper/espeak-ng-data/lang/sem/mt
+      1 12/site-packages/piper/espeak-ng-data/lang/sem/he
+      1 12/site-packages/piper/espeak-ng-data/lang/sem/ar
+      1 12/site-packages/piper/espeak-ng-data/lang/sem/am
+      1 12/site-packages/piper/espeak-ng-data/lang/sai/gn
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/rup
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/ro
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/pt-br
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/pt
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/pap
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/it
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/ht
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/fr-ch
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/fr-be
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/fr
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/es-419
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/es
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/ca-va
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/ca-nw
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/ca-ba
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/ca
+      1 12/site-packages/piper/espeak-ng-data/lang/roa/an
+      1 12/site-packages/piper/espeak-ng-data/lang/qu
+      1 12/site-packages/piper/espeak-ng-data/lang/poz/ms
+      1 12/site-packages/piper/espeak-ng-data/lang/poz/mi
+      1 12/site-packages/piper/espeak-ng-data/lang/poz/id
+      1 12/site-packages/piper/espeak-ng-data/lang/myn/quc
+      1 12/site-packages/piper/espeak-ng-data/lang/miz/mto
+      1 12/site-packages/piper/espeak-ng-data/lang/map/haw
+      1 12/site-packages/piper/espeak-ng-data/lang/ko
+      1 12/site-packages/piper/espeak-ng-data/lang/jpx/ja
+      1 12/site-packages/piper/espeak-ng-data/lang/itc/la
+      1 12/site-packages/piper/espeak-ng-data/lang/iro/chr
+      1 12/site-packages/piper/espeak-ng-data/lang/ira/ps
+      1 12/site-packages/piper/espeak-ng-data/lang/ira/ku
+      1 12/site-packages/piper/espeak-ng-data/lang/ira/fa-latn
+      1 12/site-packages/piper/espeak-ng-data/lang/ira/fa
+      1 12/site-packages/piper/espeak-ng-data/lang/ine/sq
+      1 12/site-packages/piper/espeak-ng-data/lang/ine/hyw
+      1 12/site-packages/piper/espeak-ng-data/lang/ine/hy
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/ur
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/si
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/sd
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/pa
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/or
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/ne
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/mr
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/kok
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/hi
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/gu
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/bpy
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/bn
+      1 12/site-packages/piper/espeak-ng-data/lang/inc/as
+      1 12/site-packages/piper/espeak-ng-data/lang/grk/grc
+      1 12/site-packages/piper/espeak-ng-data/lang/grk/el
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/nl
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/lb
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-us-nyc
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-us
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-shaw
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-gb-x-rp
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-gb-x-gbcwmd
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-gb-x-gbclan
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-gb-scotland
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en-029
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/en
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/de
+      1 12/site-packages/piper/espeak-ng-data/lang/gmw/af
+      1 12/site-packages/piper/espeak-ng-data/lang/gmq/sv
+      1 12/site-packages/piper/espeak-ng-data/lang/gmq/nb
+      1 12/site-packages/piper/espeak-ng-data/lang/gmq/is
+      1 12/site-packages/piper/espeak-ng-data/lang/gmq/fo
+      1 12/site-packages/piper/espeak-ng-data/lang/gmq/da
+      1 12/site-packages/piper/espeak-ng-data/lang/eu
+      1 12/site-packages/piper/espeak-ng-data/lang/esx/kl
+      1 12/site-packages/piper/espeak-ng-data/lang/dra/te
+      1 12/site-packages/piper/espeak-ng-data/lang/dra/ta
+      1 12/site-packages/piper/espeak-ng-data/lang/dra/ml
+      1 12/site-packages/piper/espeak-ng-data/lang/dra/kn
+      1 12/site-packages/piper/espeak-ng-data/lang/cus/om
+      1 12/site-packages/piper/espeak-ng-data/lang/cel/gd
+      1 12/site-packages/piper/espeak-ng-data/lang/cel/ga
+      1 12/site-packages/piper/espeak-ng-data/lang/cel/cy
+      1 12/site-packages/piper/espeak-ng-data/lang/ccs/ka
+      1 12/site-packages/piper/espeak-ng-data/lang/cau/ab
+      1 12/site-packages/piper/espeak-ng-data/lang/bnt/tn
+      1 12/site-packages/piper/espeak-ng-data/lang/bnt/sw
+      1 12/site-packages/piper/espeak-ng-data/lang/bat/lv
+      1 12/site-packages/piper/espeak-ng-data/lang/bat/ltg
+      1 12/site-packages/piper/espeak-ng-data/lang/bat/lt
+      1 12/site-packages/piper/espeak-ng-data/lang/azc/nci
+      1 12/site-packages/piper/espeak-ng-data/lang/art/xex
+      1 12/site-packages/piper/espeak-ng-data/lang/art/sjn
+      1 12/site-packages/piper/espeak-ng-data/lang/art/qya
+      1 12/site-packages/piper/espeak-ng-data/lang/art/qdb
+      1 12/site-packages/piper/espeak-ng-data/lang/art/py
+      1 12/site-packages/piper/espeak-ng-data/lang/art/piqd
+      1 12/site-packages/piper/espeak-ng-data/lang/art/lfn
+      1 12/site-packages/piper/espeak-ng-data/lang/art/jbo
+      1 12/site-packages/piper/espeak-ng-data/lang/art/io
+      1 12/site-packages/piper/espeak-ng-data/lang/art/ia
+      1 12/site-packages/piper/espeak-ng-data/lang/art/eo
+      1 12/site-packages/piper/espeak-ng-data/lang/aav/vi-vn-x-south
+      1 12/site-packages/piper/espeak-ng-data/lang/aav/vi-vn-x-central
+      1 12/site-packages/piper/espeak-ng-data/lang/aav/vi
+      1 12/site-packages/piper/espeak-ng-data/la_dict
+      1 12/site-packages/piper/espeak-ng-data/ky_dict
+      1 12/site-packages/piper/espeak-ng-data/ku_dict
+      1 12/site-packages/piper/espeak-ng-data/kok_dict
+      1 12/site-packages/piper/espeak-ng-data/ko_dict
+      1 12/site-packages/piper/espeak-ng-data/kn_dict
+      1 12/site-packages/piper/espeak-ng-data/kl_dict
+      1 12/site-packages/piper/espeak-ng-data/kk_dict
+      1 12/site-packages/piper/espeak-ng-data/ka_dict
+      1 12/site-packages/piper/espeak-ng-data/jbo_dict
+      1 12/site-packages/piper/espeak-ng-data/ja_dict
+      1 12/site-packages/piper/espeak-ng-data/it_dict
+      1 12/site-packages/piper/espeak-ng-data/is_dict
+      1 12/site-packages/piper/espeak-ng-data/io_dict
+      1 12/site-packages/piper/espeak-ng-data/intonations
+      1 12/site-packages/piper/espeak-ng-data/id_dict
+      1 12/site-packages/piper/espeak-ng-data/ia_dict
+      1 12/site-packages/piper/espeak-ng-data/hy_dict
+      1 12/site-packages/piper/espeak-ng-data/hu_dict
+      1 12/site-packages/piper/espeak-ng-data/ht_dict
+      1 12/site-packages/piper/espeak-ng-data/hr_dict
+      1 12/site-packages/piper/espeak-ng-data/hi_dict
+      1 12/site-packages/piper/espeak-ng-data/he_dict
+      1 12/site-packages/piper/espeak-ng-data/haw_dict
+      1 12/site-packages/piper/espeak-ng-data/hak_dict
+      1 12/site-packages/piper/espeak-ng-data/gu_dict
+      1 12/site-packages/piper/espeak-ng-data/grc_dict
+      1 12/site-packages/piper/espeak-ng-data/gn_dict
+      1 12/site-packages/piper/espeak-ng-data/gd_dict
+      1 12/site-packages/piper/espeak-ng-data/ga_dict
+      1 12/site-packages/piper/espeak-ng-data/fr_dict
+      1 12/site-packages/piper/espeak-ng-data/fi_dict
+      1 12/site-packages/piper/espeak-ng-data/fa_dict
+      1 12/site-packages/piper/espeak-ng-data/eu_dict
+      1 12/site-packages/piper/espeak-ng-data/et_dict
+      1 12/site-packages/piper/espeak-ng-data/es_dict
+      1 12/site-packages/piper/espeak-ng-data/eo_dict
+      1 12/site-packages/piper/espeak-ng-data/en_dict
+      1 12/site-packages/piper/espeak-ng-data/el_dict
+      1 12/site-packages/piper/espeak-ng-data/de_dict
+      1 12/site-packages/piper/espeak-ng-data/da_dict
+      1 12/site-packages/piper/espeak-ng-data/cy_dict
+      1 12/site-packages/piper/espeak-ng-data/cv_dict
+      1 12/site-packages/piper/espeak-ng-data/cs_dict
+      1 12/site-packages/piper/espeak-ng-data/crh_dict
+      1 12/site-packages/piper/espeak-ng-data/cmn_dict
+      1 12/site-packages/piper/espeak-ng-data/chr_dict
+      1 12/site-packages/piper/espeak-ng-data/ca_dict
+      1 12/site-packages/piper/espeak-ng-data/bs_dict
+      1 12/site-packages/piper/espeak-ng-data/bpy_dict
+      1 12/site-packages/piper/espeak-ng-data/bn_dict
+      1 12/site-packages/piper/espeak-ng-data/bg_dict
+      1 12/site-packages/piper/espeak-ng-data/be_dict
+      1 12/site-packages/piper/espeak-ng-data/ba_dict
+      1 12/site-packages/piper/espeak-ng-data/az_dict
+      1 12/site-packages/piper/espeak-ng-data/as_dict
+      1 12/site-packages/piper/espeak-ng-data/ar_dict
+      1 12/site-packages/piper/espeak-ng-data/an_dict
+      1 12/site-packages/piper/espeak-ng-data/am_dict
+      1 12/site-packages/piper/espeak-ng-data/af_dict
+      1 12/site-packages/piper/espeak-ng-data/ab_dict
+      1 12/site-packages/onnxruntime/license
+      1 12/site-packages/numpy/ma/license
+      1 12/site-packages/nltk/version
+      1 12/site-packages/matplotlib/mpl-data/matplotlibrc
+      1 12/site-packages/matplotlib/mpl-data/fonts/ttf/license_stix
+      1 12/site-packages/matplotlib/mpl-data/fonts/ttf/license_dejavu
+      1 12/site-packages/langdetect/profiles/zh-tw
+      1 12/site-packages/langdetect/profiles/zh-cn
+      1 12/site-packages/langdetect/profiles/vi
+      1 12/site-packages/langdetect/profiles/ur
+      1 12/site-packages/langdetect/profiles/uk
+      1 12/site-packages/langdetect/profiles/tr
+      1 12/site-packages/langdetect/profiles/tl
+      1 12/site-packages/langdetect/profiles/th
+      1 12/site-packages/langdetect/profiles/te
+      1 12/site-packages/langdetect/profiles/ta
+      1 12/site-packages/langdetect/profiles/sw
+      1 12/site-packages/langdetect/profiles/sv
+      1 12/site-packages/langdetect/profiles/sq
+      1 12/site-packages/langdetect/profiles/so
+      1 12/site-packages/langdetect/profiles/sl
+      1 12/site-packages/langdetect/profiles/sk
+      1 12/site-packages/langdetect/profiles/ru
+      1 12/site-packages/langdetect/profiles/ro
+      1 12/site-packages/langdetect/profiles/pt
+      1 12/site-packages/langdetect/profiles/pl
+      1 12/site-packages/langdetect/profiles/pa
+      1 12/site-packages/langdetect/profiles/no
+      1 12/site-packages/langdetect/profiles/nl
+      1 12/site-packages/langdetect/profiles/ne
+      1 12/site-packages/langdetect/profiles/mr
+      1 12/site-packages/langdetect/profiles/ml
+      1 12/site-packages/langdetect/profiles/mk
+      1 12/site-packages/langdetect/profiles/lv
+      1 12/site-packages/langdetect/profiles/lt
+      1 12/site-packages/langdetect/profiles/ko
+      1 12/site-packages/langdetect/profiles/kn
+      1 12/site-packages/langdetect/profiles/ja
+      1 12/site-packages/langdetect/profiles/it
+      1 12/site-packages/langdetect/profiles/id
+      1 12/site-packages/langdetect/profiles/hu
+      1 12/site-packages/langdetect/profiles/hr
+      1 12/site-packages/langdetect/profiles/hi
+      1 12/site-packages/langdetect/profiles/he
+      1 12/site-packages/langdetect/profiles/gu
+      1 12/site-packages/langdetect/profiles/fr
+      1 12/site-packages/langdetect/profiles/fi
+      1 12/site-packages/langdetect/profiles/fa
+      1 12/site-packages/langdetect/profiles/et
+      1 12/site-packages/langdetect/profiles/es
+      1 12/site-packages/langdetect/profiles/en
+      1 12/site-packages/langdetect/profiles/el
+      1 12/site-packages/langdetect/profiles/de
+      1 12/site-packages/langdetect/profiles/da
+      1 12/site-packages/langdetect/profiles/cy
+      1 12/site-packages/langdetect/profiles/cs
+      1 12/site-packages/langdetect/profiles/ca
+      1 12/site-packages/langdetect/profiles/bn
+      1 12/site-packages/langdetect/profiles/bg
+      1 12/site-packages/langdetect/profiles/ar
+      1 12/site-packages/langdetect/profiles/af
+      1 12/site-packages/adafruit_blinka/microcontroller/bcm283x/pulseio/libgpiod_pulsein64
+      1 12/site-packages/adafruit_blinka/microcontroller/bcm283x/pulseio/libgpiod_pulsein
+      1 12/site-packages/adafruit_blinka/microcontroller/amlogic/meson_g12_common/pulseio/libgpiod_pulsein
+      1 12/site-packages/adafruit_blinka/microcontroller/amlogic/a311d/pulseio/libgpiod_pulsein64
+      1 12/site-packages/adafruit_blinka/microcontroller/amlogic/a311d/pulseio/libgpiod_pulsein
+      1 12
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo]133;k;end_suffix_kitty
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "===== SCRIPTS ET FICHIERS EXÉCUTABLES ====="]133;k;end_suffix_kitty===== SCRIPTS ET FICHIERS EXÉCUTABLES =====
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;EXECUTABLES=$(find "$BASE" -type f -executable 2>/dev/null || true)]133;k;end_suffix_kitty]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;if [ -n "$EXECUTABLES" ]; then     echo "$EXECUTABLES"; else     echo "Aucun fichier exécutable détecté."; fi]133;k;end_suffix_kitty/home/nexus/robots_google_nvidia/install_50_outils.sh
+/home/nexus/robots_google_nvidia/test_robot.py
+/home/nexus/robots_google_nvidia/activate.sh
+/home/nexus/robots_google_nvidia/venv/bin/pyserial-ports
+/home/nexus/robots_google_nvidia/venv/bin/tifffile
+/home/nexus/robots_google_nvidia/venv/bin/srt-deduplicate
+/home/nexus/robots_google_nvidia/venv/bin/async-json-rpc-server
+/home/nexus/robots_google_nvidia/venv/bin/srt-lines-matching
+/home/nexus/robots_google_nvidia/venv/bin/idna
+/home/nexus/robots_google_nvidia/venv/bin/cffi-gen-src
+/home/nexus/robots_google_nvidia/venv/bin/tiffcomment
+/home/nexus/robots_google_nvidia/venv/bin/markdown-it
+/home/nexus/robots_google_nvidia/venv/bin/fastapi
+/home/nexus/robots_google_nvidia/venv/bin/uvicorn
+/home/nexus/robots_google_nvidia/venv/bin/bottle.py
+/home/nexus/robots_google_nvidia/venv/bin/pip3.12
+/home/nexus/robots_google_nvidia/venv/bin/ct2-openai-gpt2-converter
+/home/nexus/robots_google_nvidia/venv/bin/pyftmerge
+/home/nexus/robots_google_nvidia/venv/bin/weasel
+/home/nexus/robots_google_nvidia/venv/bin/read_zbar
+/home/nexus/robots_google_nvidia/venv/bin/wheel
+/home/nexus/robots_google_nvidia/venv/bin/pio
+/home/nexus/robots_google_nvidia/venv/bin/watchmedo
+/home/nexus/robots_google_nvidia/venv/bin/hf
+/home/nexus/robots_google_nvidia/venv/bin/typer
+/home/nexus/robots_google_nvidia/venv/bin/srt-mux
+/home/nexus/robots_google_nvidia/venv/bin/tabulate
+/home/nexus/robots_google_nvidia/venv/bin/numba
+/home/nexus/robots_google_nvidia/venv/bin/pinout
+/home/nexus/robots_google_nvidia/venv/bin/pip3
+/home/nexus/robots_google_nvidia/venv/bin/ct2-opennmt-py-converter
+/home/nexus/robots_google_nvidia/venv/bin/normalizer
+/home/nexus/robots_google_nvidia/venv/bin/nltk
+/home/nexus/robots_google_nvidia/venv/bin/read_zbar.py
+/home/nexus/robots_google_nvidia/venv/bin/gtts-cli
+/home/nexus/robots_google_nvidia/venv/bin/spacy
+/home/nexus/robots_google_nvidia/venv/bin/imageio_download_bin
+/home/nexus/robots_google_nvidia/venv/bin/ct2-opus-mt-converter
+/home/nexus/robots_google_nvidia/venv/bin/ttx
+/home/nexus/robots_google_nvidia/venv/bin/pintest
+/home/nexus/robots_google_nvidia/venv/bin/sprc
+/home/nexus/robots_google_nvidia/venv/bin/pyserial-miniterm
+/home/nexus/robots_google_nvidia/venv/bin/bottle
+/home/nexus/robots_google_nvidia/venv/bin/platformio
+/home/nexus/robots_google_nvidia/venv/bin/dotenv
+/home/nexus/robots_google_nvidia/venv/bin/pyterm.py
+/home/nexus/robots_google_nvidia/venv/bin/tqdm
+/home/nexus/robots_google_nvidia/venv/bin/f2py
+/home/nexus/robots_google_nvidia/venv/bin/isympy
+/home/nexus/robots_google_nvidia/venv/bin/srt
+/home/nexus/robots_google_nvidia/venv/bin/plotly_get_chrome
+/home/nexus/robots_google_nvidia/venv/bin/imageio_remove_bin
+/home/nexus/robots_google_nvidia/venv/bin/transformers
+/home/nexus/robots_google_nvidia/venv/bin/ct2-transformers-converter
+/home/nexus/robots_google_nvidia/venv/bin/ftconf.py
+/home/nexus/robots_google_nvidia/venv/bin/fonttools
+/home/nexus/robots_google_nvidia/venv/bin/srt-linear-timeshift
+/home/nexus/robots_google_nvidia/venv/bin/i2cscan.py
+/home/nexus/robots_google_nvidia/venv/bin/pyftsubset
+/home/nexus/robots_google_nvidia/venv/bin/tiff2fsspec
+/home/nexus/robots_google_nvidia/venv/bin/httpx
+/home/nexus/robots_google_nvidia/venv/bin/vosk-transcriber
+/home/nexus/robots_google_nvidia/venv/bin/ct2-fairseq-converter
+/home/nexus/robots_google_nvidia/venv/bin/pip
+/home/nexus/robots_google_nvidia/venv/bin/ftdi_urls.py
+/home/nexus/robots_google_nvidia/venv/bin/huggingface-cli
+/home/nexus/robots_google_nvidia/venv/bin/piodebuggdb
+/home/nexus/robots_google_nvidia/venv/bin/websockets
+/home/nexus/robots_google_nvidia/venv/bin/pytesseract
+/home/nexus/robots_google_nvidia/venv/bin/srt-process
+/home/nexus/robots_google_nvidia/venv/bin/numpy-config
+/home/nexus/robots_google_nvidia/venv/bin/srt-fixed-timeshift
+/home/nexus/robots_google_nvidia/venv/bin/flask
+/home/nexus/robots_google_nvidia/venv/bin/onnxruntime_test
+/home/nexus/robots_google_nvidia/venv/bin/pygmentize
+/home/nexus/robots_google_nvidia/venv/bin/ct2-marian-converter
+/home/nexus/robots_google_nvidia/venv/bin/lsm2bin
+/home/nexus/robots_google_nvidia/venv/bin/readelf.py
+/home/nexus/robots_google_nvidia/venv/bin/srt-play
+/home/nexus/robots_google_nvidia/venv/bin/tiny-agents
+/home/nexus/robots_google_nvidia/venv/bin/ct2-opennmt-tf-converter
+/home/nexus/robots_google_nvidia/venv/bin/piper
+/home/nexus/robots_google_nvidia/venv/bin/srt-normalise
+/home/nexus/robots_google_nvidia/venv/bin/pyav
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/certifi/tests/test_certify.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/linalg/lapack_lite.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/linalg/_umath_linalg.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/testing/print_coercion_tables.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_mt19937.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/mtrand.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_common.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_generator.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_sfc64.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_bounded_integers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_pcg64.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/bit_generator.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/random/_philox.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/fft/_pocketfft_umath.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_struct_ufunc_tests.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_umath_tests.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_rational_tests.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_operand_flag_tests.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_multiarray_tests.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy/_core/_simd.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pydantic_core/_pydantic_core.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/thinc/layers/premap_ids.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/thinc/layers/sparselinear.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/thinc/backends/cblas.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/thinc/backends/numpy_ops.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/thinc/backends/linalg.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/thinc/extra/search.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/ctranslate2/_ext.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tools/print_version.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/innovations/_arma_innovations.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/holtwinters/_exponential_smoothers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/regime_switching/_hamilton_filter.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/regime_switching/_kim_smoother.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_granger_causality_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_granger_causality_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_granger_causality_realcons_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_diag.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_granger_causality_realcons_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_granger_causality_realgdp_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_granger_causality_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_granger_causality_realcons_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_granger_causality_realcons.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_granger_causality_realcons_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_granger_causality_realgdp_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_diag.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_Sigmau.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_granger_causality_realgdp_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_granger_causality_realcons_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_granger_causality_realgdp_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_granger_causality_realcons_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_granger_causality_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_Sigmau.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_granger_causality_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_granger_causality_realcons_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_granger_causality_realcons_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_diag.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_granger_causality_realcons.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_granger_causality_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_granger_causality_realcons.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_granger_causality_realcons.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_Sigmau.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_granger_causality_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_Sigmau.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_diag.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_diag.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_granger_causality_realcons_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_granger_causality_realcons_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_Sigmau.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_Sigmau.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cili_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_granger_causality_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_granger_causality_realcons_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_granger_causality_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_c_granger_causality_realcons.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_granger_causality_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ncs_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cisli_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_granger_causality_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_nc_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_granger_causality_realcons.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_granger_causality_realcons_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cos_lagorder.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_granger_causality_realgdp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_nc.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_diag.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_ci_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cs_granger_causality_realgdp_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_cis_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_colo_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs_fc5.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ct_granger_causality_realgdp_realinv.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_cst_ir.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_co_inst_causality_dp_r.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/vecm_e6_jmulti_coslo_inst_causality_r_dp.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/vector_ar/tests/JMulTi_results/macrodata_jmulti_ncs.txt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_filters/_conventional.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_filters/_univariate.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_filters/_univariate_diffuse.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_filters/_inversions.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_kalman_filter.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_representation.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_smoothers/_conventional.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_smoothers/_univariate.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_smoothers/_univariate_diffuse.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_smoothers/_classical.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_smoothers/_alternative.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_initialization.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_simulation_smoother.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_tools.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_kalman_smoother.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/statespace/_cfa_simulation_smoother.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/stl/_stl.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/_innovations.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/ardl/pss_critical_values.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/ardl/_pss_critical_values/pss.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/tsa/exponential_smoothing/_ets_smooth.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/nonparametric/linbin.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/nonparametric/_smoothers_lowess.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/statsmodels/robust/_qn.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/regex/_regex.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/missing.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/_cyutility.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/arrays.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/parsers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/join.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/testing.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/lib.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/indexing.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/timestamps.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/fields.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/np_datetime.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/strptime.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/offsets.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/nattype.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/conversion.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/ccalendar.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/tzconversion.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/dtypes.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/period.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/parsing.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/timedeltas.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/base.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/timezones.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslibs/vectorized.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/internals.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/sparse.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/ops_dispatch.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/pandas_parser.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/hashing.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/properties.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/hashtable.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/algos.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/json.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/writers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/interval.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/window/indexers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/window/aggregations.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/tslib.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/byteswap.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/sas.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/index.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/pandas_datetime.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/ops.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/groupby.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pandas/_libs/reshape.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/charset_normalizer/md.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/charset_normalizer/cd.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/cv2/cv2.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libavformat-4639def2.so.62.12.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libwebp-0c5118d0.so.7.2.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libavfilter-b5da520e.so.11.14.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libopencore-amrwb-1b0ca122.so.0.0.5
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libasound-c7818c60.so.2.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libswscale-88e9f973.so.9.5.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libavdevice-d91b4e17.so.62.3.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libswresample-f0bc92fc.so.6.3.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libx265-f5385bb8.so.216
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libxcb-xfixes-6de855b8.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libavutil-5809ad29.so.60.26.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libmp3lame-8f9e436f.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libavcodec-5e6b81c2.so.62.28.102
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libopus-114e2b1a.so.0.11.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libdav1d-f4b27961.so.7.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libgmp-8c6c054f.so.10.5.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libsharpyuv-48a062bd.so.0.1.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libopencore-amrnb-d72c52e2.so.0.0.5
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libvpx-edb6de90.so.12.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libXau-154567c4.so.6.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libvpl-e4e9cae8.so.2.16
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libwebpmux-e1880640.so.3.1.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libdrm-b0291a67.so.2.4.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libx264-d6533a8d.so.165
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libunistring-09f6121d.so.5.2.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libSvtAv1Enc-9393c086.so.4.1.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libxcb-shape-7716c890.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libgnutls-71454fd1.so.30.42.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libxcb-shm-0be6dfbf.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av.libs/libxcb-5ddf6756.so.1.1.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/preshed/counter.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/preshed/bloom.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/preshed/maps.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libvpx-4fb239ff.so.11.0.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libQt5Test-2553f470.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxkbcommon-x11-27b61ed0.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-image-c881c1c3.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libswscale-fe215b0b.so.9.5.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libssl-81259c47.so.1.1.1k
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libQt5Core-9088e21b.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libQt5XcbQpa-bb93e554.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libgfortran-83c28eba.so.5.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libQt5Gui-afbd4980.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-xfixes-6de855b8.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libaom-a0d22147.so.3.14.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-util-9255dd30.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-randr-562554c2.so.0.1.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libX11-xcb-b482bfde.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libavformat-4762a711.so.62.12.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libcrypto-5409cd36.so.1.1.1k
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libopenblasp-r0-59ffcd50.3.15.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxkbcommon-de59cad2.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libavutil-befbbc48.so.60.26.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libavdevice-f388f22c.so.62.3.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libXau-154567c4.so.6.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libpng16-529cb57a.so.16.58.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libswresample-2dfded3b.so.6.3.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-keysyms-28f5419b.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-sync-e532c63b.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-icccm-9453e4f7.so.4.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libdrm-b0291a67.so.2.4.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libavfilter-8d3f2f4f.so.11.14.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libpcre2-16-bca4e6b3.so.0.7.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libQt5Widgets-5be2f68b.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-render-161c0eb5.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-xinerama-fe4b410c.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-xkb-fd53f741.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libavif-43e630fc.so.16.4.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libquadmath-2284e583.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-shape-7716c890.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libavcodec-c4204469.so.62.28.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-shm-0be6dfbf.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_contrib_python.libs/libxcb-render-util-f04ad2c5.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/RPi/_GPIO.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/_cffi_backend.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spidev.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/onnxruntime/capi/libonnxruntime_providers_shared.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/onnxruntime/capi/libonnxruntime.so.1.30.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/_dynfunc.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/mviewbuf.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/experimental/jitclass/_box.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/_dispatcher.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/core/runtime/_nrt_python.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/core/typeconv/_typeconv.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/_helperlib.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/_devicearray.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/cuda/cudadrv/_extras.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/np/ufunc/workqueue.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/np/ufunc/omppool.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/np/ufunc/_internal.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/np/ufunc/tbbpool.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numba/np/ufunc/_num_threads.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/_plotly_utils/png.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/distance/metrics_cpp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/distance/metrics_cpp_avx2.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/distance/_initialize_cpp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/utils_cpp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/fuzz_cpp_avx2.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/_feature_detector_cpp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/process_cpp_impl.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/rapidfuzz/fuzz_cpp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/nltk/test/dependency.doctest
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect-1.0.9.dist-info/licenses/NOTICE
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect-1.0.9.dist-info/licenses/LICENSE
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/yaml/_yaml.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/segmentation/_watershed_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/segmentation/_quickshift_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/segmentation/_felzenszwalb_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/segmentation/_slic.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/_shared/geometry.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/_shared/interpolation.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/_shared/fast_exp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/_shared/transform.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_cascade.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/corner_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_texture.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_haar.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_canny_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/censure_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_sift.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_hoghistogram.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/orb_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/brief_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/feature/_hessian_det_appx.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/filters/rank/generic_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/filters/rank/core_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/filters/rank/percentile_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/filters/rank/core_cy_3d.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/filters/rank/bilateral_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/filters/_multiotsu.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_skeletonize_various_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_flood_fill_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_misc_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_max_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_convex_hull.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_skeletonize_lee_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_extrema_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/morphology/_grayreconstruct.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/graph/heap.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/graph/_spath.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/graph/_mcp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/graph/_ncut_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_unwrap_2d.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_inpaint.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_rolling_ball_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_unwrap_1d.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_nl_means_denoising.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_unwrap_3d.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/restoration/_denoise_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/transform/_hough_transform.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/transform/_radon_transform.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/transform/_warps_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/draw/_draw.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/_find_contours.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/_find_contours_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/_marching_cubes_lewiner_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/_pnpoly.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/_ccomp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/measure/_moments_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/skimage/util/_remap.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/adafruit_blinka/microcontroller/bcm283x/pulseio/libgpiod_pulsein64
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/adafruit_blinka/microcontroller/bcm283x/pulseio/libgpiod_pulsein
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/adafruit_blinka/microcontroller/amlogic/meson_g12_common/pulseio/libgpiod_pulsein
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/adafruit_blinka/microcontroller/amlogic/a311d/pulseio/libgpiod_pulsein64
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/adafruit_blinka/microcontroller/amlogic/a311d/pulseio/libgpiod_pulsein
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy.libs/libquadmath-2284e583-a9307bba.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/numpy.libs/libgfortran-83c28eba-468e71e5.so.5.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/ctranslate2.libs/libgomp-e985bcbb.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/ctranslate2.libs/libctranslate2-fd146744.so.4.8.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/safetensors/_safetensors_rust.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/wrapt/_wrappers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/ml/parser_model.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/strings.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/vocab.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/training/gold_io.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/training/example.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/training/align.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/training/alignment_array.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/matcher/levenshtein.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/matcher/matcher.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/matcher/dependencymatcher.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/matcher/phrasematcher.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/kb/candidate.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/kb/kb.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/kb/kb_in_memory.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/lexeme.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/attrs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokenizer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/vectors.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/span_group.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/graph.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/morphanalysis.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/span.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/token.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/doc.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/tokens/_retokenize.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/multitask.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/tagger.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/morphologizer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_edit_tree_internals/edit_trees.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/transition_system.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/_state.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/nonproj.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/_beam_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/arc_eager.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/stateclass.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/_parser_internals/ner.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/trainable_pipe.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/senter.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/pipe.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/transition_parser.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/dep_parser.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/ner.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/pipeline/sentencizer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/morphology.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/symbols.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/spacy/parts_of_speech.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/cymem/cymem.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/murmurhash/mrmr.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/plane.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/index.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/device.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/format.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/_core.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/video/reformatter.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/video/plane.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/video/codeccontext.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/video/format.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/video/frame.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/video/stream.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/logging.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/container/core.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/container/output.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/container/input.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/container/streams.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/container/pyio.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/sidedata/motionvectors.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/sidedata/encparams.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/sidedata/sidedata.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/utils.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/buffer.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/subtitles/codeccontext.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/subtitles/subtitle.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/subtitles/stream.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/error.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/frame.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/plane.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/codeccontext.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/format.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/fifo.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/resampler.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/frame.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/layout.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/audio/stream.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/rational.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/bitstream.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/dictionary.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/filter/filter.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/filter/link.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/filter/loudnorm.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/filter/graph.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/filter/context.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/stream.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/opaque.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/packet.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/codec/hwaccel.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/codec/codec.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/av/codec/context.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/msgpack/_cmsgpack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/_webrtcvad.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/hf_xet/hf_xet.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/tqdm/completion.sh
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/contourpy/_contourpy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/psutil/_psutil_linux.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/liblcms2-dade1fbf.so.2.0.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libopenjp2-b07f72ad.so.2.5.4
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libbrotlidec-7e5462ba.so.1.2.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libtiff-fc87e79d.so.6.2.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libbrotlicommon-53534446.so.1.2.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libwebpmux-8fb1c9f6.so.3.1.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libxcb-ad31f5a3.so.1.1.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libavif-8a7f9d56.so.16.4.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libharfbuzz-172d1f63.so.0.61421.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libwebp-51b0b3f7.so.7.2.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libfreetype-9fc94c80.so.6.20.6
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libsharpyuv-0066295b.so.0.1.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libzstd-44be1190.so.1.5.7
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libwebpdemux-9fe2abcc.so.2.0.17
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libjpeg-31e2ca52.so.62.4.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libXau-154567c4.so.6.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/libpng16-abb096d5.so.16.58.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pillow.libs/liblzma-2be87c3e.so.5.8.3
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/speech_recognition/flac-linux-x86
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/speech_recognition/flac-mac
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/speech_recognition/flac-win32.exe
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/speech_recognition/flac-linux-x86_64
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/protobuf-7.36.1.dist-info/WHEEL
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/protobuf-7.36.1.dist-info/METADATA
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/protobuf-7.36.1.dist-info/LICENSE
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/fontTools/misc/bezierTools.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/fontTools/varLib/iup.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/fontTools/pens/momentsPen.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/fontTools/qu2cu/qu2cu.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/fontTools/cu2qu/cu2qu.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/fontTools/feaLib/lexer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/mediapipe/tasks/c/libmediapipe.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/llvmlite/binding/libllvmlite.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/tokenizers/tokenizers.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_services/__init__.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_services/info.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_services/browser.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_services/registry.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_handlers/answers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_handlers/record_manager.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_handlers/query_handler.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_handlers/multicast_outgoing_queue.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_history.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_record_update.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_utils/ipaddress.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_utils/time.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_listener.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_updates.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_dns.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_protocol/outgoing.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_protocol/incoming.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/zeroconf/_cache.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_imagingcms.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_imagingmath.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_imagingtk.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_imaging.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_imagingmorph.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_avif.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_webp.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/PIL/_imagingft.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ru
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/da
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/hu
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/uk
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/nl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ml
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/lt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/vi
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/he
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/sw
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/sl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/lv
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/te
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/de
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/hr
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/mr
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/sq
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/it
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/cy
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/tr
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ta
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/no
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ko
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/id
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/fa
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ja
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/en
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/bg
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ca
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/fi
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/es
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ro
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/tl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ur
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/cs
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/et
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/hi
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/zh-tw
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/mk
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/bn
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/pa
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/af
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/sv
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/kn
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/pt
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/fr
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/el
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/gu
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/sk
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/pl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ar
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/zh-cn
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/ne
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/profiles/th
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/langdetect/utils/messages.properties
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/soxr/soxr_ext.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/_upb/_message.abi3.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/symbol_database.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/reflection.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/type_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/json_options_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/duration_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/timestamp_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/source_context_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/text_format.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/proto_builder.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/empty_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/testing_refleaks.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/api_implementation.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/message_listener.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/message_benchmark.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/type_checkers.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/field_mask.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/well_known_types.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/json_format_benchmark.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/python_message.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/encoder.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/python_edition_defaults.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/extension_dict.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/containers.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/enum_type_wrapper.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/wire_format.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/builder.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/internal/decoder.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/any_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/compiler/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/compiler/plugin_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/proto_json.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/json_format.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/field_mask_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/testdata/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/api_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/pyext/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/pyext/cpp_message.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/message_factory.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/runtime_version.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/duration.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/message.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/descriptor.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/descriptor_pool.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/proto.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/proto_text.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/json_enumvalue_options_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/struct_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/descriptor_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/descriptor_database.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/service_reflection.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/timestamp.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/any.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/text_encoding.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/unknown_fields.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/wrappers_pb2.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/google/protobuf/util/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pip/_internal/__init__.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/vosk/libvosk.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/signal/_spline.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/signal/_upfirdn_apply.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/signal/_sosfilt.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/signal/_sigtools.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/signal/_peak_finding_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/signal/_max_len_seq_inner.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_decomp_interpolative.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_internal_matfuncs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_batched_linalg.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_cythonized_array_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_solve_toeplitz.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_linalg_pythran.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/cython_blas.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/cython_lapack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_fblas.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_decomp_update.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_flapack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/linalg/_matfuncs_sqrtm_triu.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_cyutility.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/cluster/vq/_vq.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/cluster/hierarchy/_optimal_leaf_ordering.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/cluster/hierarchy/_hierarchy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/linalg/_propack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/linalg/_eigen/arpack/_arpacklib.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/linalg/_dsolve/_superlu.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/_sparsetools.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/_csparsetools.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_traversal.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_reordering.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_matching.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_tools.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_flow.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/io/_fast_matrix_market/_fmm_core.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/io/matlab/_mio5_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/io/matlab/_mio_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/io/matlab/_streams.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/cython_special.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_special_ufuncs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_ufuncs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_specfun.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_ellip_harm_2.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_test_internal.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_gufuncs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_comb.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/special/_ufuncs_cxx.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/fftpack/convolve.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_slsqplib.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_bglu_dense.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_highspy/_core.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_highspy/_highs_options.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_lbfgsb.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_moduleTNC.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/cython_optimize/_zeros.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_zeros.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_group_columns.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_lsap.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_pava_pybind.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_minpack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_direct.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/optimize/_trlib/_trlib.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/fft/_duccfft/pyduccfft.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/interpolate/_rbfinterp_pythran.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/interpolate/_ppoly.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/interpolate/_dierckx.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/interpolate/_interpnd.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/interpolate/_fitpack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/interpolate/_rgi_cython.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_levy_stable/levyst.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_ansari_swilk_statistics.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_qmc_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_qmvnt_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_sobol.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_unuran/unuran_wrapper.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_biasedurn.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_stats_pythran.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_stats.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/stats/_rcont/rcont.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/ndimage/_ni_label.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/ndimage/_cytest.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/ndimage/_ctest.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/ndimage/_nd_image.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/ndimage/_rank_filter_1d.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/integrate/_dop.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/integrate/_test_multivariate.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/integrate/_odepack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/integrate/_quadpack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/integrate/_vode.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/_hausdorff.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/_qhull.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/_voronoi.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/transform/_rigid_transform_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/transform/_rotation_cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/_ckdtree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/_distance_pybind.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/spatial/_distance_wrap.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/odr/__odrpack.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/_test_ccallback.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/_test_deprecation_def.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/_fpumode.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/_ccallback_c.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/_uarray/_uarray.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/messagestream.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy/_lib/_test_deprecation_call.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/linux/x86_64/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/mac/arm64/libpv_porcupine.dylib
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/mac/x86_64/libpv_porcupine.dylib
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/cortex-a76-aarch64/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/cortex-a53/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/cortex-a76/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/cortex-a72-aarch64/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/arm11/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/cortex-a53-aarch64/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pvporcupine/lib/raspberry-pi/cortex-a72/libpv_porcupine.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/blis/py.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/blis/cy.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/websockets/speedups.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/eglRenderer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libvpx-4fb239ff.so.11.0.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libQt5Test-2553f470.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxkbcommon-x11-27b61ed0.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-image-c881c1c3.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libswscale-fe215b0b.so.9.5.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libssl-81259c47.so.1.1.1k
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libQt5Core-9088e21b.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libQt5XcbQpa-bb93e554.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libgfortran-83c28eba.so.5.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libQt5Gui-afbd4980.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-xfixes-6de855b8.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libaom-a0d22147.so.3.14.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-util-9255dd30.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-randr-562554c2.so.0.1.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libX11-xcb-b482bfde.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libavformat-4762a711.so.62.12.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libcrypto-5409cd36.so.1.1.1k
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libopenblasp-r0-59ffcd50.3.15.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxkbcommon-de59cad2.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libavutil-befbbc48.so.60.26.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libavdevice-f388f22c.so.62.3.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libXau-154567c4.so.6.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libpng16-529cb57a.so.16.58.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libswresample-2dfded3b.so.6.3.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-keysyms-28f5419b.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-sync-e532c63b.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-icccm-9453e4f7.so.4.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libdrm-b0291a67.so.2.4.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libavfilter-8d3f2f4f.so.11.14.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libpcre2-16-bca4e6b3.so.0.7.1
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libQt5Widgets-5be2f68b.so.5.15.19
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-render-161c0eb5.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-xinerama-fe4b410c.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-xkb-fd53f741.so.1.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libavif-43e630fc.so.16.4.2
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libquadmath-2284e583.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-shape-7716c890.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libavcodec-c4204469.so.62.28.101
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-shm-0be6dfbf.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/opencv_python.libs/libxcb-render-util-f04ad2c5.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/_cyutility.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/preprocessing/_target_encoder_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_gradient_boosting.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/_gradient_boosting.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/common.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/_predictor.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/splitting.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/histogram.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/_binning.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_k_means_lloyd.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_dbscan_inner.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/_reachability.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/_linkage.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_k_means_minibatch.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_k_means_elkan.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_k_means_common.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/cluster/_hierarchical_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/_loss/_loss.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_radius_neighbors_classmode.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_radius_neighbors.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_argkmin.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_datasets_pair.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_argkmin_classmode.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_base.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_pairwise_distances_reduction/_middle_term_computer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/metrics/_dist_metrics.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/svm/_liblinear.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/svm/_libsvm_sparse.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/svm/_newrand.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/svm/_libsvm.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_isfinite.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_weight_vector.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_fast_dict.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_seq_dataset.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_typedefs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/arrayfuncs.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_bitset.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/sparsefuncs_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_cython_blas.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_openmp_helpers.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/murmurhash.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_vector_sentinel.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_heap.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_sorting.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/utils/_random.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/decomposition/_online_lda_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/_build_utils/version.py
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/linear_model/_cd_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/linear_model/_sag_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/linear_model/_sgd_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/__check_build/_check_build.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/manifold/_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/tree/_partitioner.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/tree/_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/tree/_criterion.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/tree/_splitter.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/tree/_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/_isotonic.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/neighbors/_ball_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/neighbors/_kd_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/neighbors/_quad_tree.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sklearn/neighbors/_partition_nodes.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/srsly/ujson/ujson.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/srsly/msgpack/_epoch.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/srsly/msgpack/_packer.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/srsly/msgpack/_unpacker.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/srsly/ruamel_yaml/py.typed
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy.libs/libgfortran-040039e1-0352e75f.so.5.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy.libs/libgfortran-83c28eba.so.5.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy.libs/libquadmath-2284e583.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/scipy.libs/libquadmath-96973f99-934c22de.so.0.0.0
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/_image.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/backends/_tkagg.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/backends/_backend_agg.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/_qhull.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/_c_internal_utils.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/_path.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/ft2font.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/matplotlib/_tri.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/netifaces.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/sysv_ipc.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/kiwisolver/_cext.cpython-312-x86_64-linux-gnu.so
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/tray/tray.urdf
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/tray/tray_textured4.obj
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/tray/tray_textured4.mtl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/kuka_iiwa/meshes/finger_tip_left.stl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/kuka_iiwa/meshes/finger_tip_right.stl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/kuka_iiwa/meshes/finger_base_right.stl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/pybullet_data/kuka_iiwa/meshes/finger_base_left.stl
+/home/nexus/robots_google_nvidia/venv/lib/python3.12/site-packages/piper/espeakbridge.so
+/home/nexus/robots_google_nvidia/lancer_cerveau.sh
+/home/nexus/robots_google_nvidia/robot_core/pwm/pwm.sh
+/home/nexus/robots_google_nvidia/robot_core/i2c/i2c.sh
+/home/nexus/robots_google_nvidia/robot_core/robot.sh
+/home/nexus/robots_google_nvidia/robot_core/gpio/gpio.sh
+/home/nexus/robots_google_nvidia/robot_core/spi/spi.sh
+/home/nexus/robots_google_nvidia/robot_ollama.py
+/home/nexus/robots_google_nvidia/forge_robot.sh
+/home/nexus/robots_google_nvidia/conversation_ollama.py
+/home/nexus/robots_google_nvidia/scripts/test_sante_robot.py
+/home/nexus/robots_google_nvidia/scripts/test_simulation_complet.py
+/home/nexus/robots_google_nvidia/scripts/test_robot_reel.py
+/home/nexus/robots_google_nvidia/scripts/test_voice.py
+/home/nexus/robots_google_nvidia/scripts/parle_au_robot.py
+/home/nexus/robots_google_nvidia/scripts/moteur_logique.py
+/home/nexus/robots_google_nvidia/scripts/robot_local.py
+/home/nexus/robots_google_nvidia/scripts/test_materiel.py
+/home/nexus/robots_google_nvidia/scripts/test_simulation.py
+/home/nexus/robots_google_nvidia/lancer_conversation.sh
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo]133;k;end_suffix_kitty
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;echo "===== SCRIPTS SHELL ====="]133;k;end_suffix_kitty===== SCRIPTS SHELL =====
+]133;k;start_kitty]133;C]133;k;end_kitty]133;k;start_suffix_kitty[0 q]2;SHELL_FILES=$(find "$BASE" -type f \    \( -name "*.sh" -o -name "*.bash" \) 2>/dev/null || true)]133;k;end_suffix_kitty[?2004h]133;k;start_kitty]133;A]133;k;end_kittynexus@nexus-Latitude-5520:~$ ]133;k;start_suffix_kitty[5 q]2;~]133;k;end_suffix_kittySCAN RÉEL DU DOSSIER
+============================================================
+Dossier : /home/nexus/robots_google_nvidia
+Date    : 2026-09-18 20:08:34
+Machine : nexus-Latitude-5520
+============================================================
+
+===== STRUCTURE DES DOSSIERS =====
+/home/nexus/robots_google_nvidia
+├── activate.sh
+├── conversation_ollama.py
+├── forge_robot.sh
+├── googlebot.txt
+├── google_robots.txt
+├── google_sitemap.txt
+├── importlib
+├── install_50_outils.sh
+├── json
+├── lancer_cerveau.sh
+├── lancer_conversation.sh
+├── logs
+├── models
+│   └── vosk-model-fr
+│       ├── am
+│       │   └── final.mdl
+│       ├── conf
+│       │   ├── mfcc.conf
+│       │   └── model.conf
+│       ├── graph
+│       │   ├── disambig_tid.int
+│       │   ├── Gr.fst
+│       │   ├── HCLr.fst
+│       │   └── phones
+│       ├── ivector
+│       │   ├── final.dubm
+│       │   ├── final.ie
+│       │   ├── final.mat
+│       │   ├── global_cmvn.stats
+│       │   ├── online_cmvn.conf
+│       │   └── splice.conf
+│       └── README
+├── nvidia_crawlers.txt
+├── nvidia_robots.txt
+├── nvidia_sitemap.txt
+├── optimus_config.json
+├── optimus_install.log
+├── optimus_report
+│   └── optimus_gap_20260918_134445.txt
+├── os
+├── robot_core
+│   ├── config.json
+│   ├── gpio
+│   │   ├── gpio.sh
+│   │   └── pins
+│   │       ├── gpio0
+│   │       ├── gpio1
+│   │       ├── gpio10│   │       ├── gpio11│   │       ├── gpio12│   │       ├── gpio13│   │       ├── gpio14│   │       ├── gpio15│   │       ├── gpio16│   │       ├── gpio17│   │       ├── gpio18│   │       ├── gpio19│   │       ├── gpio2│   │       ├── gpio20│   │       ├── gpio21│   │       ├── gpio22│   │       ├── gpio23│   │       ├── gpio24│   │       ├── gpio25│   │       ├── gpio26│   │       ├── gpio27│   │       ├── gpio3│   │       ├── gpio4│   │       ├── gpio5│   │       ├── gpio6│   │       ├── gpio7│   │       ├── gpio8│   │       └── gpio9│   ├── i2c│   │   ├── bus0│   │   ├── bus1│   │   └── i2c.sh│   ├── pwm│   │   ├── ch0│   │   ├── ch1│   │   ├── ch2│   │   ├── ch3│   │   ├── ch4│   │   ├── ch5│   │   ├── ch6│   │   ├── ch7│   │   └── pwm.sh│   ├── robot.sh│   └── spi│       ├── dev│       └── spi.sh├── robot_ollama.py├── scan_gemini_robot.json├── scan_reports│   ├── scan_reel_20260918_200211.txt│   └── scan_reel_20260918_200834.txt├── scan_senior_20260918_142449.txt├── scripts│   ├── moteur_logique.py│   ├── parle_au_robot.py│   ├── robot_local.py│   ├── test_materiel.py│   ├── test_robot_reel.py│   ├── test_sante_robot.py│   ├── test_simulation_complet.py│   ├── test_simulation.py│   └── test_voice.py├── subprocess├── sys├── test_message.py├── test_robot.py├── tests├── venv│   ├── bin│   │   ├── activate│   │   ├── activate.csh│   │   ├── activate.fish│   │   ├── Activate.ps1│   │   ├── async-json-rpc-server│   │   ├── bottle│   │   ├── bottle.py│   │   ├── cffi-gen-src│   │   ├── ct2-fairseq-converter│   │   ├── ct2-marian-converter│   │   ├── ct2-openai-gpt2-converter│   │   ├── ct2-opennmt-py-converter│   │   ├── ct2-opennmt-tf-converter│   │   ├── ct2-opus-mt-converter│   │   ├── ct2-transformers-converter│   │   ├── dotenv│   │   ├── f2py│   │   ├── fastapi│   │   ├── flask│   │   ├── fonttools│   │   ├── ftconf.py│   │   ├── ftdi_urls.py│   │   ├── gtts-cli│   │   ├── hf│   │   ├── httpx│   │   ├── huggingface-cli│   │   ├── i2cscan.py│   │   ├── idna│   │   ├── imageio_download_bin│   │   ├── imageio_remove_bin│   │   ├── isympy│   │   ├── lsm2bin│   │   ├── markdown-it│   │   ├── nltk│   │   ├── normalizer│   │   ├── numba│   │   ├── numpy-config│   │   ├── onnxruntime_test│   │   ├── pinout│   │   ├── pintest│   │   ├── pio│   │   ├── piodebuggdb│   │   ├── pip│   │   ├── pip3│   │   ├── pip3.12│   │   ├── piper│   │   ├── platformio│   │   ├── plotly_get_chrome│   │   ├── pyav│   │   ├── __pycache__│   │   │   ├── bottle.cpython-312.pyc│   │   │   ├── ftconf.cpython-312.pyc│   │   │   ├── ftdi_urls.cpython-312.pyc│   │   │   ├── i2cscan.cpython-312.pyc│   │   │   ├── pyterm.cpython-312.pyc│   │   │   ├── readelf.cpython-312.pyc│   │   │   └── read_zbar.cpython-312.pyc│   │   ├── pyftmerge│   │   ├── pyftsubset│   │   ├── pygmentize│   │   ├── pyserial-miniterm│   │   ├── pyserial-ports│   │   ├── pyterm.py│   │   ├── pytesseract│   │   ├── python -> python3│   │   ├── python3 -> /usr/bin/python3│   │   ├── python3.12 -> python3│   │   ├── readelf.py│   │   ├── read_zbar│   │   ├── read_zbar.py│   │   ├── spacy│   │   ├── sprc│   │   ├── srt│   │   ├── srt-deduplicate│   │   ├── srt-fixed-timeshift│   │   ├── srt-linear-timeshift│   │   ├── srt-lines-matching│   │   ├── srt-mux│   │   ├── srt-normalise│   │   ├── srt-play│   │   ├── srt-process│   │   ├── tabulate│   │   ├── tiff2fsspec│   │   ├── tiffcomment│   │   ├── tifffile│   │   ├── tiny-agents│   │   ├── tqdm│   │   ├── transformers│   │   ├── ttx│   │   ├── typer│   │   ├── uvicorn│   │   ├── vosk-transcriber│   │   ├── watchmedo│   │   ├── weasel│   │   ├── websockets│   │   └── wheel│   ├── COPYING│   ├── include│   │   └── python3.12│   ├── lib│   │   └── python3.12│   │       └── site-packages│   ├── lib64 -> lib│   ├── pyvenv.cfg│   └── share│       ├── jupyter│       │   └── labextensions│       └── man│           └── man1└── voices    ├── fr_FR-siwis-medium.onnx    ├── fr_FR-siwis-medium.onnx.1    ├── fr_FR-siwis-medium.onnx.json    └── fr_FR-siwis-medium.onnx.json.173 directories, 156 files===== STATISTIQUES =====Fichiers       : 47860Dossiers       : 7465Liens symboliques : 4Taille totale  : 3,1G===== TYPES DE FICHIERS =====  19285 py  19271 pyc   1117 obj   1095 urdf   1077 mtl    665 pyi    572 txt    540 so    270 csv    194 pxd    178 dist-info/wheel    178 dist-info/record    178 dist-info/metadata    178 dist-info/installer    131 pyx    126 mat    113 gz    104 typed     89 dist-info/licenses/license     86 stl     83 png     75 0     70 h     67 ppn     64 f90     63 dist-info/requested     61 afm     59 doctest     53 json     48 sav     47 md     46 dat     45 rst     42 r     42 npy     40 ttf     40 tpl     39 c     38 build     31 mplstyle     29 xml     28 dist-info/license     25 npz     25 gin     25 f     24 tp     22 wav     21 in     19 svg     16 arff     16 al     15 sdf     15 js     15 exe     14 jpg     14 do     14 101     13 m     13 html     13 1     12 pkl     12 dist-info/zip-safe     12 dae     11 sh     11 pdf     11 ini     11 19     10 css     10 cpp     10 bz2      9 s      8 pyf      8 cu      8 2      7 onnx      7 index      7 data-00000-of-00001      7 102      6 xz      6 xls      6 dta      6 cfg      5 lzma      5 license      5 gzip      4 dist-info/licenses/copying      4 conf      4 bsd      4 apache      4 1k      3 z      3 yaml      3 xsl      3 toml      3 nc      3 fbs      3 dll      3 dist-info/licenses/notice      3 dist-info/licenses/authors      2 zip      2 tmpl      2 tif      2 pxi      2 pem      2 meta      2 lark      2 int      2 inp      2 hh      2 gif      2 g4      2 fst      2 f2py_f2cmap      2 dylib      2 dist-info/authors      2 b99      2 a99      2 a      2 5      2 11      1 yml      1 xrc      1 thirdparty      1 third-party      1 template      1 stats      1 rules      1 readme      1 pv      1 ptx      1 pth      1 ps1      1 properties      1 pc      1 params      1 names      1 msgpack      1 mdl      1 markdown-it      1 lua      1 log      1 lock      1 lgpl      1 jinja      1 ipynb      1 inc      1 ie      1 hpp      1 gdb      1 fits      1 fish      1 f95      1 external[7m      1 dubm[27m[7m      1 dist-info/licenses/src/pip/_vendor/truststore/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/tomli_w/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/tomli/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/rich/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/resolvelib/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/requests/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/pyproject_hooks/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/pygments/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/platformdirs/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/pkg_resources/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/packaging/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/msgpack/copying[27m[7m      1 dist-info/licenses/src/pip/_vendor/distro/license[27m[7m      1 dist-info/licenses/src/pip/_vendor/certifi/license[27m[7m      1 dist-info/licenses/numpy/ma/license[27m[7m      1 dist-info/licenses/numpy/_core/src/umath/svml/license[27m[7m      1 dist-info/licenses/numpy/_core/src/highway/license[27m[7m      1 dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/copying[27m[7m      1 dist-info/licenses/licence[27m[7m      1 dist-info/copying[27m[7m      1 dict[27m[7m      1 csh[27m[7m      1 cc[27m[7m      1 bin[27m[7m      1 asc[27m[7m      1 ani[27m[7m      1 7[27m[7m      1 6[27m[7m      1 4[27m[7m      1 3[27m[7m      1 216[27m[7m      1 17[27m[7m      1 165[27m[7m      1 16[27m[7m      1 12/site-packages/statsmodels/tsa/stl/tests/results/stl_co2[27m[7m      1 12/site-packages/statsmodels/tsa/statespace/tests/results/frbny_nowcast/nowcasting/license[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/variances[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/transition_matrices[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/sendump[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/readme[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/noisedict[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/means[27m[7m      1 12/site-packages/speech_recognition/pocketsphinx-data/en-us/acoustic-model/mdef[27m[7m      1 12/site-packages/speech_recognition/flac-mac[27m[7m      1 12/site-packages/speech_recognition/flac-linux-x86_64[27m[7m      1 12/site-packages/speech_recognition/flac-linux-x86[27m[7m      1 12/site-packages/_soundfile_data/copying[27m[7m      1 12/site-packages/sklearn/svm/src/libsvm/libsvm_changes[27m[7m      1 12/site-packages/sklearn/svm/src/liblinear/copyright[27m[7m      1 12/site-packages/sklearn/externals/readme[27m[7m      1 12/site-packages/sklearn/externals/array_api_extra/license[27m[7m      1 12/site-packages/sklearn/externals/array_api_compat/license[27m[7m      1 12/site-packages/setuptools/config/_validate_pyproject/notice[27m[7m      1 12/site-packages/setuptools/config/notice[27m[7m      1 12/site-packages/scipy/_lib/_uarray/[27m
